@@ -41,7 +41,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
                 System.out.println("发生异常");
             }
         });
-        //方案2 用户自定义定热任务-> 提交到scheduleTaskQueue中
+        //方案2 用户自定义定的任务-> 提交到scheduleTaskQueue中
         ctx.channel().eventLoop().schedule(new Runnable() {
             @Override
             public void run() {

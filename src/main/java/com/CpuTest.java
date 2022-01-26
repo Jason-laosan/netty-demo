@@ -11,5 +11,6 @@ import io.netty.util.NettyRuntime;
 public class CpuTest {
     public static void main(String[] args) {
         System.out.println(NettyRuntime.availableProcessors());
+        System.out.println(Runtime.getRuntime().availableProcessors());
     }
 }
